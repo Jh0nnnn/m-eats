@@ -774,7 +774,28 @@
     <nav id="navbar">
       <div class="nav-inner">
         <div class="logo-box">
-          <div class="logo-icon">🥗</div>
+          <div
+            style="
+              width: 42px;
+              height: 42px;
+              border-radius: 12px;
+              background: #fff;
+              border: 2px solid #f6dfe8;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25);
+              overflow: hidden;
+              flex-shrink: 0;
+            "
+          >
+            <img
+              src="assets/Logo_M_Eats.png"
+              alt="M-Eats Logo"
+              style="width: 34px; height: 34px; object-fit: contain"
+            />
+          </div>
+
           <div>
             <div
               style="
@@ -787,6 +808,7 @@
             >
               M-EATS
             </div>
+
             <div
               style="font-size: 9px; color: var(--muted); letter-spacing: 1.5px"
             >
@@ -842,17 +864,17 @@
                   font-weight: 600;
                   color: var(--pinkDeep);
                 "
-                >Makanan Sehat, Diantar ke Pintumu</span
+                >Siap diantar kepintu anda</span
               >
             </div>
             <h1 class="hero-h1 fade-up" style="transition-delay: 0.1s">
-              Makan sehat &amp;<br />
-              <span class="pink-text">nikmat</span> setiap hari<br />
+              Nikmati makanan<br />
+              <span class="pink-text"></span>sehat setiap hari<br />
               bersama <span class="pink-text">M-EATS</span>
             </h1>
             <p class="hero-desc fade-up" style="transition-delay: 0.2s">
-              Makanan bergizi diukur oleh ahli gizi — dirancang untuk kamu yang
-              sibuk di Batam namun tetap ingin hidup sehat.
+              Menu bergizi yang dirancang ahli gizi untuk kamu yang ingin tetap
+              hidup sehat di tengah kesibukan
             </p>
             <div class="btn-group fade-up" style="transition-delay: 0.3s">
               <a href="#menu" class="btn-lg btn-pink">🛒 Pesan Sekarang</a>
@@ -880,75 +902,79 @@
               xmlns="http://www.w3.org/2000/svg"
               style="width: 100%; max-width: 440px"
             >
+              <!-- Shadow -->
               <ellipse
                 cx="240"
-                cy="320"
-                rx="190"
-                ry="26"
+                cy="365"
+                rx="150"
+                ry="28"
                 fill="#ffd0e0"
-                opacity="0.5"
+                opacity="0.35"
               />
-              <circle cx="240" cy="265" r="175" fill="#FFFFFF" />
-              <circle cx="240" cy="265" r="158" fill="#fff2f8" />
-              <ellipse cx="240" cy="290" rx="125" ry="65" fill="#ffe4ef" />
-              <!-- Bowl -->
-              <ellipse
+
+              <!-- Background Circle -->
+              <circle cx="240" cy="240" r="180" fill="#fff2f8" />
+
+              <!-- Main Circle -->
+              <circle
                 cx="240"
-                cy="290"
-                rx="100"
-                ry="40"
+                cy="240"
+                r="145"
                 fill="#ffffff"
-                stroke="#fe9aac"
+                stroke="#f6dfe8"
+                stroke-width="6"
+              />
+
+              <!-- Decorative Elements -->
+              <circle cx="95" cy="120" r="12" fill="#ffd0e0" opacity="0.7" />
+              <circle cx="390" cy="135" r="16" fill="#ffc2d6" opacity="0.6" />
+              <circle cx="120" cy="360" r="10" fill="#fe9aac" opacity="0.25" />
+              <circle cx="400" cy="350" r="14" fill="#fe9aac" opacity="0.2" />
+
+              <text x="105" y="220" font-size="20">💕</text>
+              <text x="350" y="170" font-size="22">✨</text>
+              <text x="160" y="410" font-size="28">🌸</text>
+
+              <!-- Clip Path -->
+              <defs>
+                <clipPath id="logoClip">
+                  <circle cx="240" cy="240" r="125" />
+                </clipPath>
+              </defs>
+
+              <!-- Logo Image -->
+              <image
+                href="assets/Logo_M_Eats.png"
+                x="115"
+                y="115"
+                width="250"
+                height="250"
+                preserveAspectRatio="xMidYMid meet"
+                clip-path="url(#logoClip)"
+              />
+
+              <!-- Bottom Badge -->
+              <rect
+                x="155"
+                y="360"
+                width="170"
+                height="42"
+                rx="21"
+                fill="#ffffff"
+                stroke="#f6dfe8"
                 stroke-width="2"
               />
-              <rect
-                x="140"
-                y="270"
-                width="200"
-                height="50"
-                rx="0"
-                fill="#ffffff"
-              />
-              <ellipse cx="240" cy="320" rx="100" ry="20" fill="#f5e0e8" />
-              <!-- Rice -->
-              <ellipse cx="240" cy="272" rx="90" ry="30" fill="#f9f4f0" />
-              <!-- Chicken -->
-              <ellipse
-                cx="220"
-                cy="265"
-                rx="55"
-                ry="22"
-                fill="#d4956a"
-                transform="rotate(-8 220 265)"
-              />
-              <ellipse
-                cx="218"
-                cy="264"
-                rx="50"
-                ry="18"
-                fill="#e8a87c"
-                transform="rotate(-8 218 264)"
-              />
-              <!-- Broccoli -->
-              <circle cx="310" cy="255" r="18" fill="#3d7a5a" />
-              <circle cx="300" cy="248" r="14" fill="#5a9e76" />
-              <circle cx="318" cy="248" r="12" fill="#4a8f63" />
-              <!-- Egg -->
-              <ellipse cx="168" cy="268" rx="18" ry="22" fill="#fffde7" />
-              <circle cx="168" cy="268" r="10" fill="#ffb300" />
-              <!-- Floating elements -->
-              <circle cx="80" cy="140" r="10" fill="#ffe4ef" />
-              <circle cx="400" cy="120" r="14" fill="#ffd0e0" />
-              <circle cx="60" cy="360" r="8" fill="#fe9aac" opacity="0.3" />
-              <circle cx="420" cy="380" r="10" fill="#fe9aac" opacity="0.2" />
-              <text x="152" y="420" font-size="28" text-anchor="middle">
-                🌸
-              </text>
-              <text x="340" y="150" font-size="20" text-anchor="middle">
-                ✨
-              </text>
-              <text x="100" y="220" font-size="16" text-anchor="middle">
-                💕
+
+              <text
+                x="240"
+                y="387"
+                text-anchor="middle"
+                font-size="18"
+                font-weight="700"
+                fill="#f48ca7"
+                font-family="Poppins, sans-serif"
+              >
+                M-EATS
               </text>
             </svg>
           </div>
@@ -961,8 +987,9 @@
           <div class="section-header fade-up">
             <div class="tag">THE PROBLEM</div>
             <h2 class="section-title" style="color: white">
-              Makan sehat itu
-              <span style="color: var(--pink)">susah</span>.<br />Kami paham.
+              Sibuk mulu,
+              <span style="color: var(--pink)">Jadi lupa Makankan</span
+              ><br />Tenang, Kami siap bantu
             </h2>
             <p
               style="
@@ -972,8 +999,8 @@
                 line-height: 1.7;
               "
             >
-              Kehidupan di Batam serba cepat. Di antara kerja, gym, dan
-              aktivitas lain — makan sehat sering jadi yang terakhir.
+              Kerja, olahraga, sampai aktivitas harian lainnya kadang bikin pola
+              makan jadi berantakan.
             </p>
           </div>
           <div class="grid-wrap">
@@ -994,12 +1021,10 @@
                 ⏰
               </div>
               <h3 style="font-size: 20px; margin-bottom: 12px">
-                Tidak Ada Waktu Masak
+                Tidak Sempat Masak Berangkat Pagi, Pulang Malam
               </h3>
               <p style="font-size: 14px; color: #aaa; line-height: 1.7">
-                Jam kerja, perjalanan, dan malam yang panjang membuat nol waktu
-                untuk menyiapkan makan. Fast food jadi pilihan — dan dampaknya
-                terasa.
+                Ujung-ujungnya makan apa yang paling cepat
               </p>
             </div>
             <div class="problem-card fade-up" style="transition-delay: 0.12s">
@@ -1019,11 +1044,11 @@
                 💸
               </div>
               <h3 style="font-size: 20px; margin-bottom: 12px">
-                Sehat = Mahal?
+                Makanan Sehat Bikin Kantong Sekarat
               </h3>
               <p style="font-size: 14px; color: #aaa; line-height: 1.7">
-                Makanan bergizi di restoran sering kemahalan. Pilihan yang
-                terjangkau biasanya tinggi kalori dan rendah nilai gizi.
+                Harga healthy food kadang bikin niat langsung turun. Yang murah
+                belum tentu nutrisinya cukup.
               </p>
             </div>
             <div class="problem-card fade-up" style="transition-delay: 0.24s">
@@ -1043,12 +1068,11 @@
                 📊
               </div>
               <h3 style="font-size: 20px; margin-bottom: 12px">
-                Susah Hitung Nutrisi
+                Cek Nutrisi Ribet
               </h3>
               <p style="font-size: 14px; color: #aaa; line-height: 1.7">
-                Menghitung kalori dan makro terdengar mudah sampai kamu
-                melakukannya setiap hari. Kebanyakan orang menyerah dalam
-                seminggu.
+                Mikirin kalori, protein, dan gizi tiap hari itu nggak gampang.
+                Kadang maunya tinggal makan tanpa perlu hitung-hitungan lagi.
               </p>
             </div>
           </div>
@@ -1061,8 +1085,8 @@
           <div class="section-header fade-up">
             <div class="tag">SOLUSI KAMI</div>
             <h2 class="section-title">
-              M-EATS urus <span style="color: var(--pinkDeep)">semuanya</span
-              ><br />untuk kamu
+              Makan sehat jadi lebih gampang bareng
+              <span style="color: var(--pinkDeep)">M-Eats</span><br />
             </h2>
           </div>
           <div class="grid-wrap">
@@ -1096,8 +1120,8 @@
                 Diukur Ahli Gizi
               </h3>
               <p style="font-size: 13px; color: var(--muted); line-height: 1.7">
-                Setiap porsi dirancang oleh ahli gizi bersertifikat. Makro
-                nyata. Hasil nyata.
+                Setiap menu dirancang bersama ahli gizi untuk memastikan
+                kebutuhan nutrisi harian tetap terpenuhi secara seimbang
               </p>
             </div>
             <div class="solution-card fade-up" style="transition-delay: 0.1s">
@@ -1127,10 +1151,11 @@
                 📱
               </div>
               <h3 style="font-size: 18px; margin-bottom: 10px">
-                Info Gizi Simpel
+                Informasi Gizi jelas
               </h3>
               <p style="font-size: 13px; color: var(--muted); line-height: 1.7">
-                Label sederhana, kalori jelas, dan saran makan sesuai tujuanmu.
+                Kalori dan kandungan nutrisi disajikan secara jelas agar kamu
+                lebih mudah mengatur pola makan
               </p>
             </div>
             <div class="solution-card fade-up" style="transition-delay: 0.2s">
@@ -1163,8 +1188,8 @@
                 Berlangganan Bulanan
               </h3>
               <p style="font-size: 13px; color: var(--muted); line-height: 1.7">
-                Pesan sekali, nikmati terus. Makan sehat diantar sesuai
-                jadwalmu.
+                Cukup pesan sekali, menu sehat siap diantar sesuai jadwalmu
+                setiap hari
               </p>
             </div>
             <div class="solution-card fade-up" style="transition-delay: 0.3s">
@@ -1194,11 +1219,11 @@
                 ⚡
               </div>
               <h3 style="font-size: 18px; margin-bottom: 10px">
-                Pesan Cepat via WA
+                Pesan Mudah VIA WhatsApp
               </h3>
               <p style="font-size: 13px; color: var(--muted); line-height: 1.7">
-                Pesan lewat WhatsApp dalam hitungan detik. Tanpa aplikasi, tanpa
-                ribet.
+                Tinggal chat, pilih menu, lalu tunggu makananmu datang. Praktis
+                tanpa ribet
               </p>
             </div>
           </div>
@@ -1239,8 +1264,8 @@
                     flex: 1;
                   "
                 >
-                  Nasi, telur, tahu tempe, sayur. Pilihan seimbang untuk makan
-                  siang harianmu yang praktis dan bergizi.
+                  Nasi, telur, tahu tempe, dan sayur dalam porsi seimbang untuk
+                  makan harian yang praktis dan bergizi
                 </p>
                 <div class="fc-pills">
                   <span
@@ -1304,8 +1329,8 @@
                     flex: 1;
                   "
                 >
-                  Ayam, telur, sayur tinggi protein. Ideal untuk kamu yang aktif
-                  di gym dan butuh asupan protein tinggi setiap hari.
+                  Pilihan ayam, telur, dan sayur tinggi protein untuk mendukung
+                  aktifitas dan kebutuhan nutrisi harianmu
                 </p>
                 <div class="fc-pills">
                   <span
@@ -1366,8 +1391,8 @@
                     flex: 1;
                   "
                 >
-                  Nasi, ayam / telur, sayur. Solusi makan sehat yang ramah di
-                  kantong tanpa mengorbankan nutrisi.
+                  Perpaduan nasi, ayam atau telur, serta sayur sebagai pilihan
+                  makan sehat yang tetap ramah di kantong
                 </p>
                 <div class="fc-pills">
                   <span
@@ -1425,8 +1450,8 @@
                     flex: 1;
                   "
                 >
-                  Nasi, ayam, tahu, tempe, sayur. Kombinasi sempurna untuk pola
-                  makan seimbang dan bergizi lengkap.
+                  Kombinasi nasi, ayam, tahu, tempe, dan sayur untuk memenuhi
+                  kebutuhan gizi harian seimbang
                 </p>
                 <div class="fc-pills">
                   <span
@@ -1474,8 +1499,9 @@
           <div class="section-header fade-up">
             <div class="tag">ADD ON</div>
             <h2 class="section-title">
-              Lengkapi makan siangmu<br /><span style="color: var(--pinkDeep)"
-                >dengan tambahan favorit</span
+              Lengkapi makananmu dengan<br /><span
+                style="color: var(--pinkDeep)"
+                >Lauk atau Sayur bergizi hari ini</span
               >
             </h2>
             <p
@@ -1625,10 +1651,10 @@
               <div
                 style="font-size: 13px; font-weight: 800; margin-bottom: 4px"
               >
-                Pelanggan Pesan
+                Membuat Pesanan
               </div>
               <div style="font-size: 12px; color: #888">
-                WhatsApp dalam detik
+                Pesan menu favoritmu dengan mudah melalui WhatsApp
               </div>
             </div>
             <div class="step-card fade-up" style="transition-delay: 0.1s">
@@ -1675,10 +1701,10 @@
               <div
                 style="font-size: 13px; font-weight: 800; margin-bottom: 4px"
               >
-                Admin Konfirmasi
+                Transaksi
               </div>
               <div style="font-size: 12px; color: #888">
-                Verifikasi pesanan instan
+                Pembayaran cepat dan pesanan langsung diproses
               </div>
             </div>
             <div class="step-card fade-up" style="transition-delay: 0.2s">
@@ -1700,7 +1726,7 @@
                     box-shadow: 0 8px 24px rgba(254, 154, 172, 0.4);
                   "
                 >
-                  👩‍🍳
+                  🧾
                 </div>
                 <div
                   style="
@@ -1725,13 +1751,63 @@
               <div
                 style="font-size: 13px; font-weight: 800; margin-bottom: 4px"
               >
-                Dapur Siapkan
+                Admin Konfirmasi
               </div>
               <div style="font-size: 12px; color: #888">
-                Segar, dibuat saat pesan
+                Pesanan diverifikasi untuk memastikan detail sudah sesuai
               </div>
             </div>
             <div class="step-card fade-up" style="transition-delay: 0.3s">
+              <div style="position: relative; margin-bottom: 16px">
+                <div
+                  style="
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 20px;
+                    background: linear-gradient(
+                      135deg,
+                      var(--pink),
+                      var(--pinkDeep)
+                    );
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 26px;
+                    box-shadow: 0 8px 24px rgba(254, 154, 172, 0.4);
+                  "
+                >
+                  👨‍🍳
+                </div>
+                <div
+                  style="
+                    position: absolute;
+                    top: -8px;
+                    left: -8px;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 999px;
+                    background: var(--white);
+                    color: var(--pinkDeep);
+                    font-size: 11px;
+                    font-weight: 900;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  4
+                </div>
+              </div>
+              <div
+                style="font-size: 13px; font-weight: 800; margin-bottom: 4px"
+              >
+                Dapur Menyiapkan
+              </div>
+              <div style="font-size: 12px; color: #888">
+                Makanan dimasak fresh setelah pesanan diterima
+              </div>
+            </div>
+            <div class="step-card fade-up" style="transition-delay: 0.4s">
               <div style="position: relative; margin-bottom: 16px">
                 <div
                   style="
@@ -1769,16 +1845,16 @@
                     justify-content: center;
                   "
                 >
-                  4
+                  5
                 </div>
               </div>
               <div
                 style="font-size: 13px; font-weight: 800; margin-bottom: 4px"
               >
-                Kurir Jemput
+                Kurir Antar
               </div>
               <div style="font-size: 12px; color: #888">
-                Pengiriman lokal cepat
+                Kurir mengambil pesanan dan siap mengantarkan
               </div>
             </div>
             <div class="step-card fade-up" style="transition-delay: 0.4s">
@@ -1800,7 +1876,7 @@
                     box-shadow: 0 8px 24px rgba(254, 154, 172, 0.4);
                   "
                 >
-                  🎉
+                  🥗
                 </div>
                 <div
                   style="
@@ -1825,10 +1901,10 @@
               <div
                 style="font-size: 13px; font-weight: 800; margin-bottom: 4px"
               >
-                Kamu Makan Sehat
+                Makanan Sehat Tiba
               </div>
               <div style="font-size: 12px; color: #888">
-                Nikmati makanan segarmu!
+                Nikmati hidangan sehat yang fresh langsung di tempatmu
               </div>
             </div>
           </div>
@@ -1841,8 +1917,8 @@
           <div class="section-header fade-up">
             <div class="tag">KENAPA M-EATS</div>
             <h2 class="section-title">
-              Berbeda.<br /><span style="color: var(--pinkDeep)"
-                >Untuk Batam.</span
+              Sehat dan Praktis<br /><span style="color: var(--pinkDeep)"
+                >Untuk Batam</span
               >
             </h2>
           </div>
@@ -1915,8 +1991,8 @@
           <div class="section-header fade-up">
             <div class="tag">TIM KAMI</div>
             <h2 class="section-title">
-              Orang-orang berdedikasi.<br /><span style="color: var(--pinkDeep)"
-                >Misi yang bermakna.</span
+              Dibalik Setiap Menu.<br /><span style="color: var(--pinkDeep)"
+                >Ada Tim Yang Peduli.</span
               >
             </h2>
           </div>
@@ -2088,18 +2164,20 @@
                   width: 42px;
                   height: 42px;
                   border-radius: 12px;
-                  background: linear-gradient(
-                    135deg,
-                    var(--pink),
-                    var(--pinkDeep)
-                  );
+                  background: #fff;
+                  border: 2px solid #f6dfe8;
                   display: flex;
                   align-items: center;
                   justify-content: center;
-                  font-size: 20px;
+                  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.25);
+                  overflow: hidden;
                 "
               >
-                🥗
+                <img
+                  src="assets/Logo_M_Eats.png"
+                  alt="M-Eats Logo"
+                  style="width: 30px; height: 30px; object-fit: contain"
+                />
               </div>
               <div>
                 <div
@@ -2124,8 +2202,7 @@
                 max-width: 260px;
               "
             >
-              Makanan sehat dan bergizi diantar cepat di Batam. Makan baik,
-              hidup baik.
+              Nikmati makanan sehat dan bergizi tanpa perlu menunggu lama.
             </p>
             <div style="display: flex; gap: 12px; margin-top: 20px">
               <div
